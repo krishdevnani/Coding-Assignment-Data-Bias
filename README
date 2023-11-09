@@ -2,7 +2,8 @@ Hypothesis:
 Google’s Perspective API would not be able to differentiate between negative words used with a negative connotation and negative words used with a positive connotation. 
 
 Design: 
-A list called list_of_prompts contains a set of phrases that contain a combination of positive slang with positive connotations and negative slang with positive connotations. A total of 15 phrases are included as part of the list. 
+A list called list_of_prompts contains a set of phrases that contain a combination of positive slang with positive connotations and negative slang with positive connotations. 
+A total of 15 phrases are included as part of the list. 
 
 Perform test:
 In order to perform the test, a for loop was created which ran through the items in the list and correlated it with its toxicity score and whether or not the phrase was deemed as “Toxic” or “Not Toxic”. 
@@ -10,14 +11,20 @@ In order to perform the test, a for loop was created which ran through the items
 Results:
 Based on the outcomes of Perspective API’s experiment, it was identified that the program was unable to differentiate between the use of negative words with a positive connotation and negative words with a negative connotation.
 
-For example, for the phrase “That shit is so cool”, Perspective API was unable to identify that the phrase was said in a positive context. This is because the toxicity score that was received was 0.6, suggesting that the program recorded this phrase as toxic. This is one of the examples among numerous others in the list wherein Perspective API was not able to understand slang with a positive connotation.
+For example, for the phrase “That shit is so cool”, Perspective API was unable to identify that the phrase was said in a positive context. 
+This is because the toxicity score that was received was 0.6, suggesting that the program recorded this phrase as toxic. This is one of the examples among numerous others in the list wherein Perspective API was not able to understand slang with a positive connotation.
 
-It is believed that this arises due to the fact that Perspective API individually interprets words rather than viewing a phrase or sentence from a larger viewpoint. This limits its ability to accurately monitor levels of toxicity used by a user. It should also be noted that perhaps the Perspective API is mainly dependent on analyzing older versions of english. This is because it is not accustomed to American slang that is often used by adolescents. This hinders its potential for monitoring toxicity. 
+It is believed that this arises due to the fact that Perspective API individually interprets words rather than viewing a phrase or sentence from a larger viewpoint. 
+This limits its ability to accurately monitor levels of toxicity used by a user. It should also be noted that perhaps the Perspective API is mainly dependent on analyzing older versions of english. This is because it is not accustomed to American slang that is often used by adolescents. This hinders its potential for monitoring toxicity. 
 
-I was surprised to learn that the Perspective API was accurate with monitoring the level of toxicity with specific words. Words that tended to be more stronger in terms of their toxicity, in my opinion, received a higher score and were deemed “Toxic” according to the provided scale. 
+I was surprised to learn that the Perspective API was accurate with monitoring the level of toxicity with specific words. 
+Words that tended to be more stronger in terms of their toxicity, in my opinion, received a higher score and were deemed “Toxic” according to the provided scale. 
 
-This raises the question regarding how words are quantified in terms of their toxicity. It should be clarified regarding whether there is a hierarchy that is utilized. Have the values of certain words or phrases changed or stayed consistent over time? 
+This raises the question regarding how words are quantified in terms of their toxicity. 
+It should be clarified regarding whether there is a hierarchy that is utilized. Have the values of certain words or phrases changed or stayed consistent over time? 
 
-A bias that was identified during the project was that specific words were deemed more toxic than others. However, this generalization may not be applicable to all demographics of people who may view specific words to be more or less offensive than others. A theory regarding how Perspective API quantifies levels of toxicity is by media influence. Since the media has the potential to influence public opinion, I believe that Perspective API utilized media influence to help quantify and generalize the level of toxicity of specific words and phrases.
+A bias that was identified during the project was that specific words were deemed more toxic than others. 
+However, this generalization may not be applicable to all demographics of people who may view specific words to be more or less offensive than others. 
+A theory regarding how Perspective API quantifies levels of toxicity is by media influence. Since the media has the potential to influence public opinion, I believe that Perspective API utilized media influence to help quantify and generalize the level of toxicity of specific words and phrases.
 
 
