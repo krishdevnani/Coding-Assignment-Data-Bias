@@ -10,7 +10,7 @@ In order to perform the test, a for loop was created which ran through the items
 Results:
 Based on the outcomes of Perspective API’s experiment, it was identified that the program was unable to differentiate between the use of negative words with a positive connotation and negative words with a negative connotation.
 
-For example, for the phrase “That shit is so cool”, Perspective API was unable to identify that the phrase was said in a positive context. This is because the toxicity score that was received was 0.6, suggesting that the program recorded this phrase as toxic. This is one of the examples among numerous others in the list wherein Perspective API was not able to understand slang with a positive connotation.
+For example, for the phrase “wow that shit is so good”, Perspective API was unable to identify that the phrase was said in a positive context. This is because the toxicity score that was received was 0.63, suggesting that the program recorded this phrase as toxic. This is one of the examples among numerous others in the list wherein Perspective API was not able to understand slang with a positive connotation.
 
 It is believed that this arises due to the fact that Perspective API individually interprets words rather than viewing a phrase or sentence from a larger viewpoint. This limits its ability to accurately monitor levels of toxicity used by a user. It should also be noted that perhaps the Perspective API is mainly dependent on analyzing older versions of english. This is because it is not accustomed to American slang that is often used by adolescents. This hinders its potential for monitoring toxicity. 
 
