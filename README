@@ -8,7 +8,15 @@ Perform test:
 In order to perform the test, a for loop was created which ran through the items in the list and correlated it with its toxicity score and whether or not the phrase was deemed as “Toxic” or “Not Toxic”. 
 
 Results:
-Based on the outcomes of Perspective API’s experiment, it was identified that the program was unable to differentiate between the use of negative words with a positive connotation and negative words with a negative connotation.
+Based on the outcomes of Perspective API’s experiment, it was identified that the program was unable to differentiate between the use of negative words with a positive connotation and negative words with a negative connotation. This is because the Google Perspective API recieved an accuracy score of 42.85%
+
+The accuracy score was calculated by initially predetermining whether a phrase had a positive or negative connotation with the list toxic_actual. 
+
+If the loop matched with the toxic_actual list then the accurate_counter variable would increase in score 
+
+The variable accurate_percentage took the accurate_counter score and divided it by the length of the list, giving a percentage accuracy score. 
+
+Based on the examples provided, Google Perspective API recieved a score of 42.85%.
 
 For example, for the phrase “wow that shit is so good”, Perspective API was unable to identify that the phrase was said in a positive context. This is because the toxicity score that was received was 0.63, suggesting that the program recorded this phrase as toxic. This is one of the examples among numerous others in the list wherein Perspective API was not able to understand slang with a positive connotation.
 
@@ -19,4 +27,6 @@ I was surprised to learn that the Perspective API was accurate with monitoring t
 This raises the question regarding how words are quantified in terms of their toxicity. It should be clarified regarding whether there is a hierarchy that is utilized. Have the values of certain words or phrases changed or stayed consistent over time? 
 
 A bias that was identified during the project was that specific words were deemed more toxic than others. However, this generalization may not be applicable to all demographics of people who may view specific words to be more or less offensive than others. A theory regarding how Perspective API quantifies levels of toxicity is by media influence. Since the media has the potential to influence public opinion, I believe that Perspective API utilized media influence to help quantify and generalize the level of toxicity of specific words and phrases.
+
+It should be noted that in addition to providing the Google Perspective API's prediction, the actual result was also revealed by referring to the toxic_actual list, allowing the user to compare the results of the prediction with the actual answer. 
 
