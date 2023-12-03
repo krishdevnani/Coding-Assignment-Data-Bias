@@ -10,7 +10,7 @@ In order to perform the test, a for loop was created which ran through the items
 Results:
 Based on the outcomes of Perspective API’s experiment, it was identified that the program was unable to differentiate between the use of negative words with a positive connotation and negative words with a negative connotation. This is because the Google Perspective API recieved an accuracy score of 42.85%
 
-The accuracy score was calculated by initially predetermining whether a phrase had a positive or negative connotation with the list toxic_actual. 
+The accuracy score was calculated by initially predetermining whether a phrase had a positive or negative connotation with the list toxic_actual. It should be noted that the list also serves to manually anotate the data according to the aforementioned hypothesis in order to showcase to the user that there is no bias and that they could view the correct answers before running the experiment. 
 
 If the loop matched with the toxic_actual list then the accurate_counter variable would increase in score 
 
